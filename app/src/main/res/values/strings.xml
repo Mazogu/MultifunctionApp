@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CameraPersonInterest</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="hobby">Hobby</string>
+    <string name="dream_job">Dream Job</string>
+    <string name="add_person">Add Person</string>
+    <string name="view_people">View People</string>
 </resources>

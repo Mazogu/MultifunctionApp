@@ -2,4 +2,5 @@
 <resources>
     <dimen name="defaultpadding">30dp</dimen>
     <dimen name="displaysize">35sp</dimen>
+    <dimen name="largeMargin">220dp</dimen>
 </resources>
