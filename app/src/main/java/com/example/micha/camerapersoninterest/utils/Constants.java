@@ -14,4 +14,8 @@ public class Constants {
     public static class KEYS{
         public static final String PEOPLE = "list";
     }
+
+    public static class REQUESTS{
+        public static final int CAMERA_REQUEST = 1;
+    }
 }
