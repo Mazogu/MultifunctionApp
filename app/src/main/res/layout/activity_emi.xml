@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.micha.camerapersoninterest.EMIActivity">
+
+    <TextView
+        android:id="@+id/tTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total Owed"
+        android:textSize="30sp"
+        android:layout_marginBottom="@dimen/defaultpadding"/>
+    <SeekBar
+        android:id="@+id/amount"
+        android:max="10000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tRate"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/defaultpadding"
+        android:hint="Rate"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginBottom="@dimen/defaultpadding"/>
+    <SeekBar
+        android:id="@+id/rate"
+        android:max="99"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tYears"
+        android:layout_marginTop="@dimen/defaultpadding"
+        android:hint="Number of Years"
+        android:layout_width="match_parent"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/defaultpadding"/>
+    <SeekBar
+        android:id="@+id/years"
+        android:max="99"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="@dimen/defaultpadding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/displaysize"/>
+
+</LinearLayout>
