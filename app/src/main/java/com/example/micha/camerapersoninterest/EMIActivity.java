@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.example.micha.camerapersoninterest.utils.Constants;
+
 import java.lang.Math;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -89,9 +91,9 @@ public class EMIActivity extends AppCompatActivity {
     void calculate(){
         double amount = total.getProgress();
         //let's say it's monthly interest
-        double interest = (rate.getProgress()+1)/100.00;
-        double years = (time.getProgress()+1);
-        double calculation = amount*interest*Math.pow((1+interest),years*12)/(Math.pow(1+interest,years*12)-1);
+        double interest = (rate.getProgress()+Constants.VALUES.NONZERO)/Constants.VALUES.HUNDRED;
+        double years = (time.getProgress()+ Constants.VALUES.NONZERO);
+        double calculation = amount*interest*Math.pow((Constants.VALUES.NONZERO+interest),years*Constants.VALUES.MONTHS)/(Math.pow(Constants.VALUES.NONZERO+interest,years*Constants.VALUES.MONTHS)-Constants.VALUES.NONZERO);
         NumberFormat format = new DecimalFormat("#,###.##");
         emi.setText("Monthly Installment: $" + format.format(calculation));
     }

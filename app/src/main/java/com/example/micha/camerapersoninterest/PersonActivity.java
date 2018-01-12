@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.micha.camerapersoninterest.model.Person;
+import com.example.micha.camerapersoninterest.utils.Constants;
 
 import java.util.ArrayList;
 
@@ -46,5 +47,7 @@ public class PersonActivity extends AppCompatActivity {
 
     public void viewPeople(View view) {
         Intent intent = new Intent(getApplicationContext(),PersonListActivity.class);
+        intent.putParcelableArrayListExtra(Constants.KEYS.PEOPLE,people);
+        startActivity(intent);
     }
 }
