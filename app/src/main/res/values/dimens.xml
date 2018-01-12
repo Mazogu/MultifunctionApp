@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="defaultpadding">30dp</dimen>
-    <dimen name="displaysize">75sp</dimen>
+    <dimen name="displaysize">35sp</dimen>
 </resources>
